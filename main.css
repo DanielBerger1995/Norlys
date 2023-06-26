@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+
+
 #big>a>article {
   
   
@@ -44,21 +46,19 @@ overflow-x: hidden;
 scroll-behavior: smooth;
 font-family: 'Inter Tight', sans-serif;
 
-
-
 }
 
 
-.body_wrapper {
-  padding: 6vw 3vw;
-  overflow-x: hidden;
-}
+
 
 .logo {
+  margin-top: 3vw;
   width: 12rem;
+  margin-left: 4vw;
 }
 
 .poweredby {
+  margin-left: 4vw;
   display: flex;
 
   color: white;
@@ -70,10 +70,12 @@ p {
 
 .header {
   margin-top: 3vw;
+  margin-left: 4vw;
 }
 
 section {
   margin-top: 0.8vw;
+ padding-left: 3vw;
 }
 
 .video_section {
@@ -147,6 +149,8 @@ section {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    
+    
   }
 
 
@@ -194,12 +198,14 @@ section {
 .event_icon {
   width: 2vw;
   height: 2vw;
-  align-self: center;
+  
   
 }
 .icon_wrapper {
 margin-top: 0.6vw;
   display: flex;
+  align-content: center;
+
   
   
 }
@@ -252,7 +258,7 @@ font-size: 1.4vw;
       
    
       border-radius: 1.4vw;
-    
+   
     }
 
 
@@ -331,13 +337,7 @@ font-size: 1.4vw;
  
   
   
-  .details2 {
 
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-  
-  }
   
   
   
@@ -345,32 +345,8 @@ font-size: 1.4vw;
   
   
   
-  .genre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5px;
-    width: 5.2vw;
-    height: 2.1vw;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-    background-color: #AA1919;
-  }
   
-  
-  .rating {
-    font-size: 24px;
-    font-weight: 600;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5px;
-    width: 5.2vw;
-    height: 5.2vw;
-    background-color: #AA1919;
-  }
+ 
   
   .icons {
     width: 1.5vw;
@@ -477,7 +453,6 @@ font-size: 1.4vw;
 
  
  
-  
 
   
   
@@ -504,57 +479,82 @@ font-size: 1.4vw;
   
   
   
-  
-  .details3 {
-    width: 100%;
-    margin: 32px;
+ 
   
   
-  }
-  
-  .leftside {
-    width: 100%;
-  }
-  
-  .rightside {
-  
-    margin-left: 2vw;
-  
-  }
-  
-  .boardgametitle {
-    font-size: 26px;
-    color: #f2f3f4;
-  }
-  
-  .infowrap {
-  
-    display: flex;
-  
-  }
-  
-  .describe {
-    font-size: 16px;
-  
-  }
 
 
 
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+
+    .logo {
+      margin-top: 16vw;
+      
+    }
+
+
+    section {
+      margin-top: 0.8vw;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+    }
+    section::-webkit-scrollbar {
+      display: none;
+  }
+.arrowleft {
+  visibility: hidden;
+}   
+
+.arrowright {
+  visibility: hidden;
+}
+
   .image_wrap {
     height: 55%;
   }
     .event_name {
       
-      font-size: 2.4vw;
+      font-size: 3vw;
+      padding-bottom: 1vw;
     }
 
-    
+.event_icon{
+  width: 3vw;
+  height: 3vw;
+  
+}
+
+
       .icon_text {
-     
-    font-size: 1.8vw;
+     font-weight: 400;
+    font-size: 2.8vw;
+    padding-bottom: 1vw;
       }
+
+
+      .event_info {
+        padding: 2vw 3vw;
+       
+        
+      }
+
+
+
+.events_container>a>article {
+    
+  border-radius: 1.4vw;
+  border: 0px solid;
+  width: 55vw;
+  height: 45vw;
+  
+  margin-right: 2vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  
+
+}
+
 
 
 
@@ -579,10 +579,14 @@ font-size: 1.4vw;
     width: 80vw;
   }
 
+  .specific_event_info {
+    padding: 4vw 6vw;
+    
+  }
+
   #big>a>article {
   height: 100%;
 }
-
 
   }
 
