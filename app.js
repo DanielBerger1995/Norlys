@@ -69,12 +69,12 @@ function check() {
 window.onload = check(); // Check the margins when the page is loaded
 
 nextBtn.onclick = function () {
-    slider.style.marginLeft = (parseInt(slider.style.marginLeft) - 92) + 'vw';
+    slider.style.marginLeft = (parseInt(slider.style.marginLeft) - 88) + 'vw';
     check();
 }
 
 prevBtn.onclick = function () {
-    slider.style.marginLeft = (parseInt(slider.style.marginLeft) + 92) + 'vw';
+    slider.style.marginLeft = (parseInt(slider.style.marginLeft) + 88) + 'vw';
     check();
 }
 
