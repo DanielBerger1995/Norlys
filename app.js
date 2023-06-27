@@ -266,6 +266,34 @@ vid.currentTime = 0;
 
 
 
+function openPhan7() {
+    let bodyid = document.getElementById('bodyid')
+    let openedD = document.getElementById('testPhan')
+    let opacity = document.getElementById('opacityCover')
+    let vid = document.getElementById("testPhan");
+    vid.muted = false;
+    openedD.classList.add('opendetails');
+    opacity.classList.add('opacitycover');
+    bodyid.classList.add('bodystopscroll')
+   
+}
+
+function closePhan7() {
+    let bodyid = document.getElementById('bodyid')
+    let openedD = document.getElementById('testPhan')
+    let opacity = document.getElementById('opacityCover')
+    let vid = document.getElementById("testPhan");
+vid.muted = true;
+vid.currentTime = 0;
+    openedD.classList.remove('opendetails');
+    opacity.classList.remove('opacitycover');
+    bodyid.classList.remove('bodystopscroll')
+}
+
+
+
+
+
 
 
 
