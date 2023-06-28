@@ -7,7 +7,7 @@ const _eventsRef = _db.collection("events");
 let _events;
 
 // Order by Date //
-_eventsRef.orderBy("start").onSnapshot(snapshotData => {
+_eventsRef.orderBy("start").limit(7).onSnapshot(snapshotData => {
     _events = [];
     snapshotData.forEach(doc => {
         let event = doc.data();
@@ -148,7 +148,10 @@ function appendEventDetails(id) {
         <br>
         <h2>Download</h2>
         <br>
-        
+        <div class="buttons">
+        <a href="https://apps.apple.com/gb/app/phantribe-office/id1595312655"> <img src="images/appstore.png" alt="" srcset="" class="button"> </a>
+        <a href="https://play.google.com/store/apps/details?id=com.phantribe.office.app&pli=1">  <div class="button"><img src="images/googleplay.png" alt="" srcset="" class="button"></div></a>
+      </div>
         <div class="download">
 
         <div class="appstore">
